@@ -1,4 +1,3 @@
-const titleNode = document.querySelector('title');
 const navNode = document.querySelector('nav');
 const trumpWordBox = document.querySelector('.TrumpWord');
 const trumpTweetBox = document.querySelector('.TrumpSpeech');
@@ -26,7 +25,6 @@ const changeWord = e => {
   trumpWordBox.innerHTML = trumpText[0].context;
   trumpTweetBox.innerHTML = trumpText[0].tweet;
   trumpTitleBox.innerHTML = trumpText[0].word;
-  titleNode.innerHTML = trumpText[0].word;
 };
 
 window.addEventListener('click', changeWord);
